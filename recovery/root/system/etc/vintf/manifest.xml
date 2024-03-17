@@ -32,7 +32,7 @@
         <transport>hwbinder</transport>
         <fqname>@1.1::INetd/default</fqname>
     </hal>
-    <hal format="hidl" max-level="7">
+    <hal format="hidl">
         <name>android.system.wifi.keystore</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IKeystore/default</fqname>
@@ -40,15 +40,16 @@
     <hal format="native">
         <name>netutils-wrapper</name>
         <version>1.0</version>
-     <hal format="hidl">
+    </hal>    
+    <hal format="hidl">
         <name>android.hardware.boot</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-        <name>IBootControl</name>
-        <instance>default</instance>
+            <name>IBootControl</name>
+            <instance>default</instance>
         </interface>
-        <fqname>IBootControl/default</fqname>
+        <fqname>@1.0::IBootControl/default</fqname>
     </hal>
     <system-sdk>
         <version>29</version>
